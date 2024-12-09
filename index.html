@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .error {
+        color: red;
+        font-size: 0.9em;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic To-Do List</h1>
+    <form id="task-form">
+      <label for="task-input">Add a Task:</label>
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Enter your task here"
+        required
+      />
+      <button type="submit">Add Task</button>
+      <div id="error-message" class="error"></div>
+    </form>
+    <ul id="task-list"></ul>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
